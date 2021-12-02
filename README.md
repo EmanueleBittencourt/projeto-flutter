@@ -1,4 +1,4 @@
-# projeto_01
+# Projeto Flutter (Dispositivos Móveis FATEC-RP)
 
 A new Flutter project.
 
