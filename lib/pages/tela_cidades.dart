@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TelaCidade extends StatefulWidget {
-  const TelaCidade({Key? key}) : super(key: key);
+class TelaCidades extends StatefulWidget {
+  const TelaCidades({Key? key}) : super(key: key);
 
   @override
-  _TelaCidadeState createState() => _TelaCidadeState();
+  _TelaCidadesState createState() => _TelaCidadesState();
 }
 
-class _TelaCidadeState extends State<TelaCidade> {
+class _TelaCidadesState extends State<TelaCidades> {
   //lista dinâmica para armazenamento das tarefas
 
   var lista = [];
@@ -27,7 +27,7 @@ class _TelaCidadeState extends State<TelaCidade> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100.0),
         child: AppBar(
@@ -51,22 +51,17 @@ class _TelaCidadeState extends State<TelaCidade> {
                   lista[index],
                   style: TextStyle(fontSize: 14),
                 ),
-
                 trailing: IconButton(
-                    icon: Icon(Icons.pin_drop),
-                    onPressed: () {
-                      
-                    },
+                  icon: Icon(Icons.pin_drop),
+                  onPressed: () {},
                 ),
-
                 hoverColor: Theme.of(context).primaryColor,
-                onTap: (){
+                onTap: () {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                     content: Text('Em breve novidades em ${lista[index]} :D'),
                     duration: Duration(seconds: 2),
-                    ));
+                  ));
                 },
-
               ),
             );
           },

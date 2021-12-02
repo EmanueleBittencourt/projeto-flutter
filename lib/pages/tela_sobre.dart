@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_01/tela_menu.dart';
 
 class TelaSobre extends StatelessWidget {
   const TelaSobre({Key? key}) : super(key: key);
@@ -52,7 +51,7 @@ class TelaSobre extends StatelessWidget {
                 ),
               ],
             ),
-            Divider(),
+           //Divider(),
             Container(
               //padding: EdgeInsets.all(20),
               color: Theme.of(context).backgroundColor,
@@ -72,10 +71,7 @@ class TelaSobre extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => TelaMenu())
-                  );
+                  Navigator.pushNamed(context, '/menu');
                 },
               ),
             ),

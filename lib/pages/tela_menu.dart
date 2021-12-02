@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_01/tela_ajuda.dart';
-import 'package:projeto_01/tela_cidade.dart';
-import 'package:projeto_01/tela_pesquisa.dart';
 
 class TelaMenu extends StatelessWidget {
   const TelaMenu({Key? key}) : super(key: key);
@@ -42,13 +39,12 @@ class TelaMenu extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => TelaPesquisa()));
+                  Navigator.pushNamed(context, '/pesquisa');
                 },
               ),
             ),
             Divider(),
-            Divider(),
+            //Divider(),
             Container(
               padding: EdgeInsets.all(20),
               width: MediaQuery.of(context).size.width,
@@ -69,13 +65,12 @@ class TelaMenu extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => TelaAjuda()));
+                  Navigator.pushNamed(context, '/ajuda');
                 },
               ),
             ),
             Divider(),
-            Divider(),
+           //Divider(),
             Container(
               padding: EdgeInsets.all(20),
               width: MediaQuery.of(context).size.width,
@@ -96,13 +91,12 @@ class TelaMenu extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => TelaCidade()));
+                  Navigator.pushNamed(context, '/cidades');
                 },
               ),
             ),
             Divider(),
-            Divider(),
+            //Divider(),
             Container(
               padding: EdgeInsets.all(20),
               width: MediaQuery.of(context).size.width,
@@ -132,6 +126,33 @@ class TelaMenu extends StatelessWidget {
                 },
               ),
             ),
+            Divider(),
+           //Divider(),
+            Container(
+              padding: EdgeInsets.all(20),
+              width: MediaQuery.of(context).size.width,
+              color: Theme.of(context).backgroundColor,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  fixedSize: Size.fromHeight(50),
+                  backgroundColor: Theme.of(context).primaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(5.0)),
+                ),
+                child: Text(
+                  'Cadastre um novo local',
+                  style: TextStyle(
+                    color: Theme.of(context).backgroundColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: (16),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/cadastro');
+                },
+              ),
+            ),
+            
           ],
         ),
       ),
