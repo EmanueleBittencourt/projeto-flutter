@@ -43,7 +43,7 @@ class TelaMenu extends StatelessWidget {
                 },
               ),
             ),
-            Divider(),
+            //Divider(),
             //Divider(),
             Container(
               padding: EdgeInsets.all(20),
@@ -69,7 +69,7 @@ class TelaMenu extends StatelessWidget {
                 },
               ),
             ),
-            Divider(),
+            //Divider(),
            //Divider(),
             Container(
               padding: EdgeInsets.all(20),
@@ -95,8 +95,61 @@ class TelaMenu extends StatelessWidget {
                 },
               ),
             ),
-            Divider(),
             //Divider(),
+            //Divider()
+            Container(
+              padding: EdgeInsets.all(20),
+              width: MediaQuery.of(context).size.width,
+              color: Theme.of(context).backgroundColor,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  fixedSize: Size.fromHeight(50),
+                  backgroundColor: Theme.of(context).primaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(5.0)),
+                ),
+                child: Text(
+                  'Cadastre um novo local',
+                  style: TextStyle(
+                    color: Theme.of(context).backgroundColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: (16),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/cadastro');
+                },
+              ),
+            ),
+
+            //Divider(),
+            //Divider()
+            Container(
+              padding: EdgeInsets.all(20),
+              width: MediaQuery.of(context).size.width,
+              color: Theme.of(context).backgroundColor,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  fixedSize: Size.fromHeight(50),
+                  backgroundColor: Theme.of(context).primaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(5.0)),
+                ),
+                child: Text(
+                  'Exibir locais cadastrados',
+                  style: TextStyle(
+                    color: Theme.of(context).backgroundColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: (16),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/locais');
+                },
+              ),
+            ),
+                       
+           
             Container(
               padding: EdgeInsets.all(20),
               width: MediaQuery.of(context).size.width,
@@ -126,32 +179,8 @@ class TelaMenu extends StatelessWidget {
                 },
               ),
             ),
-            Divider(),
+            //Divider(),
            //Divider(),
-            Container(
-              padding: EdgeInsets.all(20),
-              width: MediaQuery.of(context).size.width,
-              color: Theme.of(context).backgroundColor,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  fixedSize: Size.fromHeight(50),
-                  backgroundColor: Theme.of(context).primaryColor,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(5.0)),
-                ),
-                child: Text(
-                  'Cadastre um novo local',
-                  style: TextStyle(
-                    color: Theme.of(context).backgroundColor,
-                    fontWeight: FontWeight.bold,
-                    fontSize: (16),
-                  ),
-                ),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/cadastro');
-                },
-              ),
-            ),
             
           ],
         ),

@@ -42,7 +42,7 @@ class _TelaInserirDocState extends State<TelaInserirDoc> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100.0),
         child: AppBar(
-          title: Text('\Inserir Locais'),
+          title: Text('\Inserir dados pessoais'),
           elevation: 15,
           centerTitle: true,
           backgroundColor: Theme.of(context).primaryColor,

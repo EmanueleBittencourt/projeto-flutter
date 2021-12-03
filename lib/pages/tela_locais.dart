@@ -88,10 +88,10 @@ class _TelaLocaisState extends State<TelaLocais> {
           }),
       floatingActionButton: FloatingActionButton(
         foregroundColor: Colors.white,
-        backgroundColor: Colors.brown,
+        backgroundColor: Theme.of(context).primaryColor,
         child: const Icon(Icons.add),
         onPressed: () {
-          Navigator.pushNamed(context, '/inserir');
+          Navigator.pushNamed(context, '/cadastro');
         },
       ),
     );

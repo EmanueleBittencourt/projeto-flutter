@@ -34,7 +34,7 @@ class _TelaCriarContaState extends State<TelaCriarConta> {
             TextField(
               controller: txtNome,
               style: const TextStyle(
-                color: Colors.brown,
+                color: Colors.black,
                 fontWeight: FontWeight.w300,
               ),
               decoration: const InputDecoration(
@@ -46,7 +46,7 @@ class _TelaCriarContaState extends State<TelaCriarConta> {
             TextField(
               controller: txtEmail,
               style: const TextStyle(
-                  color: Colors.brown, fontWeight: FontWeight.w300),
+                  color: Colors.black, fontWeight: FontWeight.w300),
               decoration: const InputDecoration(
                   prefixIcon: Icon(Icons.email), labelText: 'Email'),
             ),
