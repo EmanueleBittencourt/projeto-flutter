@@ -48,7 +48,7 @@ class _TelaCadastroState extends State<TelaCadastro> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100.0),
         child: AppBar(
-          title: Text('\nFoundee'),
+          title: Text('\Cadastre um local'),
           elevation: 15,
           centerTitle: true,
           backgroundColor: Theme.of(context).primaryColor,

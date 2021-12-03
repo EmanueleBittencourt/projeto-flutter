@@ -21,7 +21,7 @@ class _TelaCriarContaState extends State<TelaCriarConta> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100.0),
         child: AppBar(
-          title: Text('\nFoundee'),
+          title: Text('\Cadastro'),
           elevation: 15,
           centerTitle: true,
           backgroundColor: Theme.of(context).primaryColor,
